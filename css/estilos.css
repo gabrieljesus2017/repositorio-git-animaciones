@@ -1,0 +1,82 @@
+
+/*reset*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*centrar textos dentro del header y colocarlos en columnas para poder distribuir bien el menu*/
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* display flex y column gap para separar y distribuir bien el menu*/
+    
+header nav ul {
+    display: flex;
+    column-gap: 200px;
+}
+/*definimos color y altura del header*/
+header{
+    background-color:coral;
+    grid-area: header;
+    display: flex;
+    padding: 10px;
+}
+/*definir color del botones del menu que coloque el mismo coral por estetica no sabia que otro color colocar esos botones van con un anchor que colocare mas adelante padding para la altura de los bordes y bordes radius para el diametro de los botones*/
+header nav ul li{
+    list-style: none;
+    background-color: coral;
+    padding: 5px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+/*definimos altura de main un display grid 2 colunmas y 2 filas para las 4 imagenes*/
+main{
+    height: 80vh;
+   
+    
+  
+   
+}
+.grid-container{
+ display: grid;
+ grid-template-columns: auto auto auto;
+ grid-template-rows: auto auto;
+}
+
+/*color del main elegi blanco por el fondo de las imagenes y un grid area para definir las posiciones de cada imagen*/
+main{ 
+    background-color: white;
+}
+
+/*color del footer y altura de el*/
+footer{
+    background-color: coral;
+padding: 5px;  
+}
+
+  
+  footer nav ul{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: space-around;
+    padding: 5px;
+  }
+  
+  footer nav ul li a{
+    text-decoration: none;
+    color:black;
+  }
+  
+  footer h2{
+    text-align: center;
+  }
+  
+  @media screen and (min-width: 480px) and (max-width:780px){
+    .main{ background-color: pink;
+    }
+  }
