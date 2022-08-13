@@ -20,7 +20,7 @@ header nav ul {
 }
 /*definimos color y altura del header*/
 header{
-    background-color:coral;
+  background: linear-gradient(yellow,blue,red);
     grid-area: header;
     display: flex;
     padding: 10px;
@@ -35,10 +35,7 @@ header nav ul li{
 }
 /*definimos altura de main un display grid 2 colunmas y 2 filas para las 4 imagenes*/
 main{
-    height: 80vh;
-   
-    
-  
+    height: 85vh;
    
 }
 .grid-container{
@@ -46,6 +43,54 @@ main{
  grid-template-columns: auto auto auto;
  grid-template-rows: auto auto;
 }
+.imagen-uno{ 
+animation:movimiento 2.5s linear infinite;  
+}
+@keyframes movimiento{
+  0%{transform: translatey(0);}
+50%{transform: translatey(30px);}
+100%{ transform: translatey(0);}
+}
+.imagen-dos{ 
+  animation:movimiento 2.5s linear infinite;  
+  }
+  @keyframes movimiento{
+    0%{transform: translatey(0);}
+  50%{transform: translatey(30px);}
+  100%{ transform: translatey(0);}
+  }
+  .imagen-tres{ 
+    animation:movimiento 2.5s linear infinite;  
+    }
+    @keyframes movimiento{
+      0%{transform: translatey(0);}
+    50%{transform: translatey(30px);}
+    100%{ transform: translatey(0);}
+    }
+    .imagen-cuatro{ 
+      animation:movimientos 2.5s linear infinite;  
+      }
+      @keyframes movimientos{
+        0%{transform: translatex(0);}
+      50%{transform: translatex(30px);}
+      100%{ transform: translatex(0);}
+      }
+      .imagen-cinco{ 
+        animation:movimientos 2.5s linear infinite;  
+        }
+        @keyframes movimientos{
+          0%{transform: translatey(0);}
+        50%{transform: translatey(30px);}
+        100%{ transform: translatey(0);}
+        }
+        .imagen-seis{ 
+          animation:movimientos 2.5s linear infinite;  
+          }
+          @keyframes movimientos{
+            0%{transform: translatex(0);}
+          50%{transform: translatex(30px);}
+          100%{ transform: translatex(0);}
+          }
 
 /*color del main elegi blanco por el fondo de las imagenes y un grid area para definir las posiciones de cada imagen*/
 main{ 
@@ -54,7 +99,7 @@ main{
 
 /*color del footer y altura de el*/
 footer{
-    background-color: coral;
+    background: linear-gradient(yellow,blue,red);
 padding: 5px;  
 }
 
